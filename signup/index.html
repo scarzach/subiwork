@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="../images/Logo-white.png" alt="Logo"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="/Self Made Website 1/index.html">Home</a></li>
+                <li><a href="../parts/">Parts</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a class="btn" href="/Self Made Website 1/signin">
+                    <i class="fa-regular fa-user"></i> Sign In
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="signup-section">
+        <div class="container">
+            <div class="signup-form">
+                <h2>Sign Up</h2>
+                <form action="/submit_signup" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" name="
+                    </div>
+                    <div class="btn submit"><a href="/Self Made Website 1/index.html" class="btn">Submit</a></div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer bg-black">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html">
+                        <img src="images/logo-white.png" alt="logo">
+                    </a>
+                    <div class="card">
+                        <h4>Subscripe to Newsletter</h4>
+                        <p class="text-sm">
+                            Sign up for our newsletter to receive updates and promotions.
+                        </p>
+                        <form>
+                            <input type="email" id="email" placeholder="Enter your email">
+                            <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+                        </form>
+                    </div>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div>
+                    <h4>
+                        Company Name
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Process</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>
+                        Resources
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                            <a href="#">Research</a>
+                        </li>
+                        <li>
+                            <a href="#">Recent Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>
+                        Contact
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="#">hello@growthapp.growthapp.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
