@@ -37,7 +37,7 @@ img {
 
 .navbar {
     background-color: #111;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
 }
 
 .navbar .container {
@@ -114,19 +114,22 @@ img {
     background-position: top 55% center;
     transition: 2.5s;
 }
-/*
 .herop .hero-content {
     width: 100%;
     align-content: center;
     align-items: center;
-    padding: 200px 200px;
+    padding: 170px 150px;
     margin: auto;
     background: url("../images/cars/heroparts.jpg") no-repeat;
-    background-size: 100%;
-    background-position: top 50% center;
+    background-size: 70%;
+    background-position: 50% 52%;
     transition: 0s;
+    max-height: 50px;
 }
-*/
+
+.herop .container {
+    max-height: 20px;
+}
 
 .hero .hero-heading, .hero .btn {
     text-align: center;
@@ -135,7 +138,7 @@ img {
 }
 
 .hero .hero-text, .hero .hero-heading, .herop .hero-text, .herop .hero-heading{
-    width: 100%;
+    /*width: 70%;*/
     margin-bottom: auto;
     align-content: center;
     align-items: center;
@@ -145,12 +148,35 @@ img {
     color: #fff;
     text-shadow: 1px 1px #111;
     box-shadow: #111;
+    transition: 0.5s;
+    transform: translateY(-70px);
 }
 
 .hero .text-u {
     text-decoration: overline;
-    padding-bottom: 20px;
-    transform: translateY(-15px);
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 40px 0;
+    max-width: 75%;
+    transform: translateX(229px);
+}
+
+.testimonials .testimonials-heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonials .card p:nth-child(2) {
+    margin-top: 30px;
+    font-weight: bold;
 }
 
 /* Footer */
@@ -203,96 +229,11 @@ img {
     margin: 20px 0;
 } 
 
-/* Tabs */
-.tabs {
-    padding: 50px 0px;
-    align-content: center;
-}
-
-.tabs .tabs-heading {
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.tabs-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    gap: 20px;
-    justify-content: center;
-    align-content: center;
-}
-
-.tabs .card p:nth-child(2) {
-    margin-top: 30px;
-    font-weight: bold;
-}
-/* Card */
-.tcard {
-    background: #fff;
-    color: #000;
-    border-radius: 10px;
-    padding: 20px;
-}
-/* Tabs Card */
-.tcard1 {
-    background-image: url('../images/cars/heroparts.jpg');
-    background-position: -200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    align-content: center;
-    font-size: xx-large;
-    text-shadow: 1px 1px #000;
-    width: 300px;
-    height: 400px;
-    transition: 3s ease-out;
-}
-.tcard2 {
-    background-image: url('../images/cars/services.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    align-content: center;
-    font-size: xx-large;
-    text-shadow: 1px 1px #000;
-    width: 300px;
-    height: 400px;
-    transition: 3s ease-out;
-}
-.tcard3 {
-    background-image: url('../images/cars/contact.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 20%;
-    color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    align-content: center;
-    font-size: xx-large;
-    text-shadow: 1px 1px #000;
-    width: 300px;
-    height: 400px;
-    transition: 3s ease-out;
-}
-
-.tcard1:hover, .tcard2:hover, .tcard3:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
 /* Utility Classes */
 .container {
     max-width: 100%;
-    margin: 0px auto;
-    padding: 10px auto;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .container-sm {
@@ -302,6 +243,13 @@ img {
 }
 
 
+/* Card */
+.card {
+    background: #fff;
+    color: #111;
+    border-radius: 10px;
+    padding: 20px;
+}
 /* Buttons */
 .btn {
     display: inline-block;
@@ -316,6 +264,7 @@ img {
     transition: 0.5s;
     text-align: center;
 }
+
 /*.btn:hover {
     opacity: 0.8;
 }
